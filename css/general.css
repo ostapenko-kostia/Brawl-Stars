@@ -3,15 +3,6 @@
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    width: 100%;
-    margin: 0 auto;
-}
-
 ul {
     list-style-type: none;
 }
@@ -24,6 +15,10 @@ header {
 
 .header-menu {
     background: #000;
+}
+
+.menu-active {
+    display: block !important;
 }
 
 .header-menu-content {
@@ -114,7 +109,7 @@ header {
     color: #fff;
     display: flex;
     flex-direction: row;
-    padding-top: 70px;
+    padding: 70px 0 50px 0;
 }
 
 .news-title {
@@ -167,4 +162,219 @@ header {
 
 .news-links-item:nth-child(5) {
     margin-right: 0;  
+}
+
+/* Footer  */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 40px 100px 40px;
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-links-item {
+    margin-right: 12px;
+}
+
+.footer-links-item:nth-child(5) {
+    margin-right: 0;
+}
+
+.footer-links-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.025em;
+    margin-bottom: 7px;
+}
+
+.footer-top {
+    display: flex;
+}
+
+.footer-nav {
+    margin-right: auto;
+}
+
+.footer-downloadLinks {
+    display: flex;
+}
+
+.footer-appStore {
+    margin-right: 10px;
+}
+
+.footer hr {
+    border: none;
+    height: 2px;
+    margin-top: 15px;
+    background-color: #1f1f1f;
+}
+
+.footer-infoLinks {
+    display: flex;
+    margin-top: 15px;
+}
+
+.footer-infoLinks li {
+    margin-right: 15px;
+}
+
+.footer-infoLinks li:nth-child(5) {
+    margin-right: 0;
+}
+
+.footer-infoLinks li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    display: flex;
+}
+
+.footer-companyInfo {
+    margin-right: auto;
+}
+
+.footer-companyInfo-text {
+    color: #6d6968;
+}
+
+.footer-logo {
+    margin-left: auto;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+    .news-rightSide img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 880px) {
+    .gameplay-leftSide,
+    .news-rightSide {
+        display: none;
+    }
+    .gameplay-rightSide,
+    .news-leftSide {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .news-info,
+    .news-links {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 722px) {
+    .header-menu-item {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 642px) {
+    .header-menu-list {
+        display: none;
+    }
+    .menu-sandwich span {
+        height: 3px;
+        width: 30px;
+        background-color: #fff;
+        position: absolute;
+        display: block;
+        top: 40px;
+        left: 100%;
+        transform: translateX(-150%);
+    }
+    .menu-sandwich span:after,
+    .menu-sandwich span:before {
+        content: '';
+        height: 3px;
+        width: 30px;
+        display: block;
+        background-color: #fff;
+        position: absolute;
+    }
+    .menu-sandwich span:before {
+        transform: translateY(-10px);
+    }
+    .menu-sandwich span:after {
+        transform: translateY(10px);
+    }
+    .menu-sandwich:hover {
+        cursor: pointer;
+    }
+    .footer-top {
+        flex-direction: column;
+    }
+    .footer-downloadLinks {
+        margin-top: 15px !important; 
+    }
+    .footer-nav,
+    .footer-downloadLinks {
+        margin: 0 auto;
+    }
+    .footer-middle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-infoLinks {
+        flex-direction: column;
+    }
+    .footer-infoLinks li {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .footer-infoLinks li:nth-child(1) {
+        margin-top: 0 !important;
+    }
+}
+
+@media (max-width: 432px) {
+    .gameplay-links {
+        flex-direction: column;
+    }
+    .gameplay-appStore {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .header-logo {
+        width: 150px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .news-info {
+        display: block;
+        width: 300px;
+    }
+    .footer-downloadLinks {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-appStore {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 307px) {
+    .news-info {
+        width: 200px;
+    }
 }
