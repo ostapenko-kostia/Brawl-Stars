@@ -106,3 +106,65 @@ header {
 .gameplay-appStore {
     margin-right: 30px;
 }
+
+/* News section */
+
+.news {
+    background-image: url("../imgs/news-bg.jpg");
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding-top: 70px;
+}
+
+.news-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.news-leftSide,
+.news-rightSide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-leftSide {
+    margin-right: 30px;
+    text-align: right;
+}
+
+.news-info {
+    width: 400px;
+    margin-left: auto;
+}
+
+.news-rightSide img {
+    width: 500px;
+}
+
+.news-links-title {
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.025em;
+}
+
+.news-links {
+    width: auto;
+    display: flex;
+    margin-left: auto;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.news-links-item {
+    margin-right: 15px;
+}
+
+.news-links-item:nth-child(5) {
+    margin-right: 0;  
+}
